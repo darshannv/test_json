@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1aa7ec;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.custom_heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: 0 350px;
+  padding-top: 30px;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border-style: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.bottom_heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  margin-left: 270px;
+  position: relative;
+  /* Added */
+}
+
+.card-header {
+  text-align: center;
+  padding: 15px 10px;
+  background: #dee6f2;
+  color: #000;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.card-body {
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+}
+
+.card:before {
+  content: attr(data-index);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 98px;
+  position: absolute;
+  top: calc(20% - 20px);
+  left: -1px;
+  background-color: #64e764;
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 42px;
+
+}
+
+.count {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #000;
+}
